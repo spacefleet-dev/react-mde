@@ -1,7 +1,7 @@
 import * as React from "react";
 import { IconProviderProps } from "./index";
 
-export const MdeFontAwesomeIcon: React.SFC<IconProviderProps> = ({ icon }) => {
+export const MdeFontAwesomeIcon = ({ icon }: IconProviderProps) => {
   let transformedIcon = icon;
   switch (icon) {
     case "header":

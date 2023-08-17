@@ -5,7 +5,9 @@ export interface ToolbarButtonGroupProps {
   hidden: boolean;
 }
 
-export const ToolbarButtonGroup: React.FunctionComponent<ToolbarButtonGroupProps> = props => {
+export const ToolbarButtonGroup: React.FunctionComponent<
+  React.PropsWithChildren<ToolbarButtonGroupProps>
+> = props => {
   return (
     <ul className={classNames("mde-header-group", { hidden: props.hidden })}>
       {props.children}

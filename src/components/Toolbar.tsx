@@ -27,7 +27,9 @@ export interface ToolbarProps {
   buttonProps: ButtonChildProps;
 }
 
-export class Toolbar extends React.Component<ToolbarProps> {
+export class Toolbar extends React.Component<
+  React.PropsWithChildren<ToolbarProps>
+> {
   handleTabChange = (tab: Tab) => {
     const { onTabChange } = this.props;
     onTabChange(tab);
